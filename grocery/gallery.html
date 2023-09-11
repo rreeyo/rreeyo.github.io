@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GROCERY STORE SYSTEM</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: "Roboto", sans-serif;
+			position: fixed;
+		}
+		header{
+			position: fixed;
+			background-color: #22242A;
+			padding: 20px;
+			width: 100%;
+			height: 30px;
+		}
+		.left h1{
+			color: #fff;
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 22px;
+		}
+		.left span{
+			color: #ff7f50;
+		}
+		.right span{
+			color: #ff7f50;
+			padding: 5px;
+			float: right;
+			margin-top: -25px;
+			margin-right: 40px;
+			border-radius: 2px;
+			font-size: 15px;
+			font-weight: 600;
+			color: #fff;
+			background-color: #ff7f50;
+			border-radius: 5px;
+		}
+		.sidebar{
+			background: #2F323A;
+			margin-top: 70px;
+			padding-top: 30px;
+			position: fixed;
+			left: 0;
+			width: 250px;
+			height: 100%;
+			transition: 0.5s;
+			transition-property: left;
+		}
+		.sidebar .profile_image{
+			width: 120px;
+			height: 120px;
+			border-radius: 100px;
+			margin-bottom: 20px;	
+			border-color: #ffd700;
+			border-style: solid;
+		}
+		.sidebar h2{
+			color: #ccc;
+			margin-top: 0;
+			margin-bottom: 40px;
+			font-size: 18px;
+		}
+		.sidebar a{
+			color: #fff;
+			display: block;
+			width: 100%;
+			line-height: 60px;
+			text-decoration: none;
+			padding-left: 40px;
+			box-sizing: border-box;
+			transition: 0.3s;
+			/* transition-property: background; */
+		}
+		.sidebar a:hover{
+			background: #ff7f50;
+		}
+		.sidebar i{
+			padding-right: 10px;
+		}
+		label #sidebar_btn{
+			z-index: 1;
+			color: #fff;
+			position: fixed;
+			cursor: pointer;
+			left: 300px;
+			font-size: 20px;
+			margin: 5px 0;
+			transition: 0.3s;
+			transition-property: color; 
+		}
+		label #sidebar_btn:hover{
+			color: #ff7f50;
+		}
+		#check:checked ~ .sidebar{
+			left: -190px;
+		}
+		#check:checked ~ .sidebar a span{
+			display: none;
+		}
+		#check:checked ~ .sidebar a{
+			font-size: 20px;
+			margin-left: 170px;
+			width: 80px;
+		}
+		.content{
+			margin-left: 250px;
+			background-color: #fafad2;
+			background-position: center;
+			background-size: cover;
+			height: 100vh;
+			transition: 0.5s;
+			width: 205vh;
+		}
+		#check:checked ~ .content{
+			margin-left: 60px;
+		}
+		#check{
+			display: none;
+		}
+		h3{
+			font-size: 82px;
+			background-image: url(https://wallpaperaccess.com/full/2792358.png);
+			margin-top: 70px;
+			height: 125px;
+			padding-left: 230px;
+			color: #008b8b;
+			text-shadow: 5px 4px 5px #ffd700;
+			padding-top: 25px;
+			background-position: center;
+			font-weight: 600;
+		}
+		.photos1{
+			margin-left: 20px;
+			margin-top: -50px;
+			height: 250px;
+		}
+		.photos2{
+			margin-left: 20px;
+		}
+	</style>
+
+</head>
+<body>
+	<input type="checkbox" id="check">
+	<header>
+		<label for="check">
+			<i class="fas fa-bars" id="sidebar_btn"></i>
+		</label>
+		<div class="left">
+			<h1>23Sausage <span>Market</span></h1>
+		</div>
+		<div class="right">
+			<span>ANDRES</span>
+		</div>
+	</header>
+	
+	<div class="sidebar">
+		<center>
+			<img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JvY2VyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="profile_image" alt="">
+			<h2>GROCERY</h2>
+		</center>
+		<a href="index.html"><i class="fas fa-desktop"><span>&nbsp&nbsp&nbspHOME PAGE</span></i></a>
+		<a href="products.html"><i class="fas fa-shopping-cart"><span>&nbsp&nbsp&nbspPRODUCTS</span></i></a>
+		<a href="gallery.html"><i class="fas fa-images"><span>&nbsp&nbsp&nbspGALLERY</span></i></a>
+		<a href="about.html"><i class="fas fa-info-circle"><span>&nbsp&nbsp&nbspABOUT</span></i></a>
+		<a href="contactus.html"><i class="fas fa-phone-square"><span>&nbsp&nbsp&nbspCONTACT US</span></i></a>
+	</div>
+
+	<div class="content">
+		<h3>GALLERY</h3>
+		<!-- <div class="photos1">
+			<img class="nescafe" src="https://www.homeshop.ph/image/cache/catalog/Products/Beverages/Coffee/Nescafe-Classic-25g-500x500-product_popup.png" height="225" width="225">
+			<img class="nescafe" src="https://akabanebussan.com/wp-content/uploads/2018/09/40221.jpg" height="225" width="225">
+			<img class="nescafe" src="https://media.karousell.com/media/photos/products/2020/5/19/frozen_foods_homemade_and_othe_1589879950_94cca58f.jpg" height="225" width="225">
+			<img class="nescafe" src="https://www.meatpoultry.com/ext/resources/MPImages/02-2019/021919/nestle-foods.jpg?1550612330" height="225" width="225">
+			<img class="nescafe" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gh-060220-best-shampoo-1591119804.png?crop=1.00xw:1.00xh;0,0&resize=1200:*" height="225" width="300">
+			<img class="nescafe" src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/headlines/markets/china-pork-sales-how-education-can-help-consumers-warm-to-frozen-products/8554745-1-eng-GB/China-pork-sales-How-education-can-help-consumers-warm-to-frozen-products.jpg" height="215" width="275">
+		</div>
+		<div class="photos2">
+			<img class="nescafe" src="https://www.shopmagic.ph/images/detailed/13/555_SARDINES_IN_TOMATO_SAUCE_155G.jpg	" height="225" width="225">
+			<img class="nescafe" src="https://ph-test-11.slatic.net/p/bdef459d11f28a2140f1e30677673454.jpg" height="225" width="225">
+			<img class="nescafe" src="https://www.cnet.com/a/img/XeUh8fWtblJrckouR1vEIBavCM8=/1200x675/2019/12/31/8672214d-129f-40dc-b53a-be9d8085faf5/amroutine.jpg" height="225" width="300">
+			<img class="nescafe" src="https://foodindustryexecutive.com/wp-content/uploads/2019/05/bigstock-Plastic-Bags-With-Deep-Frozen-247200862.jpg" height="225" width="300">
+			<img class="nescafe" src="https://sc04.alicdn.com/kf/U2b9459fc6b6b4406854d507dbcc834743.jpg" height="225" width="225">
+			<img class="nescafe" src="https://www.naturesreward.com/wp-content/uploads/2019/05/products-lg-leaf-lettuce-2x.jpg" height="200" width="200">
+		</div> -->
+	</div>
+	
+					
+
+
+
+</body>
+</html>

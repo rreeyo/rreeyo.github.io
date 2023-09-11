@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="images/cook.png">
+    <title>reeyo</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/82dcb87ed2.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>  
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#home">REEYO</a></div>
+            <ul id="menuList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <section>
+        <div class="section1" id="home">
+            <div class="section1-left">
+                <h1>Aspiring Developer | Fresh Graduate</h1>
+                <p>Hi! I am Rio Andres. Passionate and aspiring to become a front-end developer.<i class="fa-solid fa-check" style="color: #008020;"></i></p>
+            </div>
+            <div class="section1-right">
+                <img src="images/me.png" alt="a picture of shem">
+            </div>
+        </div>
+        <div class="top-line-break"><hr></div>
+        <div class="section1-bottom">
+            <p>Skills | </p>
+            <ul>
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-wordpress"></i></li>
+                <li><i class="fa-brands fa-weebly"></i></li>
+                <li><i><img src="images/snapps.png" alt=""></i></li>
+                <!-- <li><i class="fa-brands fa-square-js"></i></li>
+                <li><i class="fa-brands fa-php"></i></li> -->
+            </ul>
+        </div>
+        <div class="section2" id="about">
+            <div class="section2-left">
+                <img src="images/desktop.jpg" alt="picture of desktop computer">
+            </div>
+            <div class="section2-right">
+                <h4>About Me</h4>
+                <h2>Passionate and Willing to Learn More <i class="fa-solid fa-magnifying-glass" style="color: #008020;"></i> </h2>
+                <p>I am a web development enthusiast with skills in HTML, 
+                    CSS, MySQL, and building visually appealing websites 
+                    using WordPress, Snapps, and Weebly. Also, I have 
+                    experience in Search Engine Optimization to ensure 
+                    websites rank high on search engines. My skill set 
+                    extends to mobile application development using 
+                    Unity 3D, and I am passionate about utiilizing Arduino 
+                    for creative tech solutions.
+                </p>
+                <h5><a href="resume/ANDRES.pdf" target="_blank">RESUME<i class="fa-solid fa-download"></i> </a></h5>  
+            </div>
+        </div>
+        <div class="section3" id="portfolio">
+            <div class="section3-row1" >
+                <h4>Portfolio</h4>
+                <h2>Projects for College Requirement <i class="fa-solid fa-school" style="color: #d8bd0e;"></i> </h2>
+            </div>
+            <div class="section3-row2">
+                <div class="section3-row2-left">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/grocery1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/grocery2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/grocery3.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/grocery4.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/grocery5.png" alt=""></div>
+                        </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="section3-row2-right">
+                    <h3>GROCERY SITE <i class="fa-solid fa-basket-shopping" style="color: #00a838;"></i> </h3>
+                    <p>The grocery site consists of different pages and was originally 
+                        made using php with database just for storing the products and its 
+                        description or records (price, quantity, etc.).  
+                    </p>
+                    <h5><a href="grocery/index.html" target="_blank">Live Demo <i class="fa-solid fa-hand-point-right"></i> </a></h5>
+                </div>
+            </div>
+            <div class="section3-row3">
+                <div class="section3-row3-left">
+                    <h3>MOVIE LIST <i class="fa-solid fa-tv" style="color: #00a838;"></i> </h3>
+                    <p>The movie list consists some of my favorite movies that are 
+                        listed vertically. This page was built using HTML and CSS with 
+                        navigation to each movie that is listed and links to its YouTube trailer.
+                    </p>
+                    <h5><a href="Movie_List/movie_list.html" target="_blank">Live Demo <i class="fa-solid fa-hand-point-right"></i> </a></h5>
+                </div>
+                <div class="section3-row3-right">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/movie-list1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/movie-list2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/movie-list3.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/movie-list4.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/movie-list5.png" alt=""></div>
+                        </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section3-row4">
+                <div class="section3-row4-left">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/uh.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/uh1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/uh4.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/uh6.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/uh7.png" alt=""></div>
+                        </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="section3-row4-right">
+                    <h3>USABILITY HEURISTIC <i class="fa-solid fa-rectangle-list" style="color: #00a838;"></i> </h3>
+                    <p>This page was assigned to us for viewing the Usability Heuristic with navigation
+                         to other HTML files and vice-versa to the index page. It has the same 
+                         structure with the movie list page.
+                    </p>
+                    <h5><a href="Usability_Heuristic/index.html" target="_blank">Live Demo <i class="fa-solid fa-hand-point-right"></i> </a></h5>
+                </div>      
+            </div>
+            <div class="section3-row5">
+                <h2>Some Other Projects <i class="fa-regular fa-folder-open" style="color: #d8bd0e;"></i> </h2>
+            </div>
+            <div class="section3-row6">
+                <div class="section3-row6-left">
+                    <h3>COPY LOGIN PAGE <i class="fa-solid fa-icons" style="color: #00a838;"></i> </h3>
+                    <p>The copy login page is a replica of both twitter and instagram
+                         login page using HTML and CSS with the help of tutorials 
+                         from YouTube.
+                    </p>
+                    <!-- <div class="copy-social-container">
+                        <h5><a href="twitter_login/index.html" target="_blank">Twitter<i class="fa-brands fa-twitter"></i> </a></h5>
+                        <h5><a href="instagram_login/index.html" target="_blank">Instagram<i class="fa-brands fa-instagram"></i> </a></h5>
+                    </div> -->
+                    
+                </div>
+                <div class="section3-row6-right">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/twitter-login.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/ig-login.png" alt=""></div>
+                        </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-row7">
+                <div class="section3-row7-left">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/song-list.png" alt=""></div>
+                        </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+                <div class="section3-row7-right"> 
+                    <h3>SONG LIST <i class="fa-solid fa-music" style="color: #00a838;"></i> </h3>
+                    <p>The song list page is another activity that we made wherein I used 
+                        a table to list my top 10 favorite songs back then including the 
+                        artist's name and song date creation. The song titles also link 
+                        to its music video on YouTube.
+                    </p>
+                    <!-- <h5><a href="Song_List/song_list.html" target="_blank">Live Demo <i class="fa-solid fa-hand-point-right"></i> </a></h5> -->
+                </div>
+            </div>
+            <!-- <div class="gdrive-portfolio">
+                <a href="https://drive.google.com/drive/folders/1k9vlZC3dcmIQPQoB8CHnfg1TQQpZDTlV?usp=sharing" target="_blank"><span>Portfolio Google Drive</span></a>
+            </div> -->
+            <div class="section3-row8">
+                <h2>OJT Requirement<i class="fa-solid fa-school" style="color: #d8bd0e;"></i> </h2>
+            </div>
+            <div class="section3-row9"> 
+                <div class="section3-row9-left">
+                    <h3>TSMFII<i class="fa-solid fa-mobile-screen-button" style="color: #00a838;"></i> </h3>
+                    <p>The Tokai Seat Motor Final Inspection Instruction (TSMFII) is 
+                        our final requirement during our OJT at Creotec, Laguna. This 
+                        is a mobile application created using Unity 3D for viewing the 
+                        instructions and eliminating the use of traditional papers during 
+                        inspection. I was one of the developer and mainly focused on the 
+                        UI and functionality of the app.
+                    </p>
+                    <h5><a href="https://drive.google.com/drive/folders/1bAlnIo2r6InO-zm4HsUVFRNSFdoYLkO5?usp=sharing" target="_blank">APK Download<i class="fa-solid   fa-download"></i> </a></h5>  
+                </div>
+                <!-- OJT swiper -->
+                <div class="section3-row9-right">
+                    <!-- Swiper -->
+                    <div class="swiper OJTmySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/TSMFII-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/TSMFII-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/TSMFII-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/TSMFII-4.jpg" alt=""></div>
+                        </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-row10">    
+                <h2>Design Project<i class="fa-solid fa-diagram-project" style="color: #d8bd0e;"></i> </h2>
+            </div>
+            <div class="section3-row11">
+                <div class="section3-row11-left">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">    
+                            <div class="swiper-slide"><img src="images/automeric-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/automeric-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/automeric-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/automeric-4.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="section3-row11-right">  
+                    <h3>AUTOMERIC<i class="fa-solid fa-bars-progress" style="color: #00a838;"></i> </h3>
+                    <p>Automeric is a smart turmeric juicer and pulverizer using 
+                        Arduino Mega. The machine is 100 cm in height, and 50 cm in 
+                        width and has the capability to either juice or powderize 
+                        a turmeric depending on the user input. During our design 
+                        project, I was one of the assigned in both software and 
+                        hardware.
+                    </p>    
+                </div>
+            </div>
+        </div>
+        <div class="section4" id="contact">
+            <div class="section4-row1">
+                <h4>Contact Me</h4>
+                <h2>Let's get in touch! <i class="fa-solid fa-hand-point-down" style="color: #d8bd0e;"></i> </h2>
+                <div class="icon-list-container">
+                    <div class="icon-list">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>riomndres@gmail.com</p>
+                    </div>
+                    <!-- <div class="icon-list">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+63 (909) 138 8570</p>
+                    </div> -->
+                    <div class="icon-list">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>Philippines</p>
+                    </div>
+                </div>
+                <div class="line-break"><hr></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>reeyo | 2023</p>
+        </div>
+    </footer>
+
+    
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "430px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".OJTmySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        
+    </script>
+</body>
+</html>
