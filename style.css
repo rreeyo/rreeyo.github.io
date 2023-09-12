@@ -210,6 +210,13 @@ section{
     -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.32);
 }
 
+/* special section */
+.special-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 100px;
+}
 /* section 3 */
 
 .section3{
@@ -219,7 +226,8 @@ section{
 .section3 .section3-row1,
 .section3 .section3-row5,
 .section3 .section3-row8,
-.section3 .section3-row10{
+.section3 .section3-row10,
+.section3 .section3-row12{
     margin: 0 100px;
 }
 .section3 .section3-row1 h4{
@@ -231,12 +239,18 @@ section{
 }
 .section3 .section3-row1 .fa-school,
 .section3 .section3-row5 .fa-folder-open,
-.section3 .section3-row8 .fa-school,
-.section3 .section3-row10 .fa-diagram-project{
+.section3 .section3-row8 .fa-school{
     font-size: 24px;
     padding-left: 5px;
 }
-
+.section3 .section3-row10 .fa-diagram-project{
+    font-size: 24px;
+    padding-left: 10px;
+}
+.section3 .section3-row12 .fa-square-js{
+    font-size: 30px;
+    padding-left: 10px;
+}
 /* swiper JS */
 .swiper {   
     width: 80%;
@@ -276,7 +290,8 @@ section{
     object-fit: cover;
 } */
 
-.section3 h3{
+.section3 h3,
+.js-section h3{
     padding-bottom: 10px;
 }
 
@@ -313,7 +328,8 @@ section{
 
 .section3 .section3-row3,
 .section3 .section3-row6,
-.section3 .section3-row9{
+.section3 .section3-row9,
+.js-section .js-row1{
     padding: 40px 0 50px;
     display: flex;
     align-items: center;
@@ -322,18 +338,21 @@ section{
 }
 .section3 .section3-row3-left,
 .section3 .section3-row6-left,
-.section3 .section3-row9-left{
+.section3 .section3-row9-left,
+.js-section .js-row1-left{
     width: 30%;
     height: 100%;
 }
 .section3 .section3-row3-left .mySwiper,
 .section3 .section3-row6-left .mySwiper,
-.section3 .section3-row9-left .mySwiper{
+.section3 .section3-row9-left .mySwiper,
+.js-section .js-row1-left .mySwiper{
     margin: auto;
 }
 .section3 .section3-row3-right,
 .section3 .section3-row6-right,
-.section3 .section3-row9-right{
+.section3 .section3-row9-right,
+.js-section .js-row1-right{
     width: 50%;
 }
 
@@ -344,7 +363,8 @@ section{
 .section3-row6-left p,
 .section3-row7-right p,
 .section3-row9-left p,
-.section3-row11-right p{
+.section3-row11-right p,
+.js-section .js-row1-left p{
     line-height: 1.5rem;
 }
 
@@ -552,7 +572,8 @@ section h5 a:hover{
     .section3 .section3-row1,
     .section3 .section3-row5,
     .section3 .section3-row8,
-    .section3 .section3-row10{
+    .section3 .section3-row10,
+    .section3 .section3-row12{
         width: 100%;
         margin: 0 5%;
     }
@@ -592,7 +613,8 @@ section h5 a:hover{
 
     .section3 .section3-row3,
     .section3 .section3-row6,
-    .section3 .section3-row9{
+    .section3 .section3-row9,
+    .js-section .js-row1{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -603,13 +625,15 @@ section h5 a:hover{
     }
     .section3 .section3-row3-right,
     .section3 .section3-row6-right,
-    .section3 .section3-row9-right{
+    .section3 .section3-row9-right,
+    .js-section .js-row1-right{
         display: flex;
         justify-content: center;
     }
     .section3 .section3-row3-left,
     .section3 .section3-row6-left,
-    .section3 .section3-row9-left{
+    .section3 .section3-row9-left,
+    .js-section .js-row1-left{
         width: 100%;
         padding-top: 20px;
     }
