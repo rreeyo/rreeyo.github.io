@@ -381,11 +381,18 @@ section{
 .fa-mobile-screen-button,
 .fa-download,
 .fa-bars-progress,
-.fa-sliders{
+.fa-sliders,
+.fa-expand,
+.fa-caret-down{
     padding-left: 10px;
 }
 
+.fa-caret-down{
+    font-size: 22px;
+}
+
 .section3 .swiper,
+.js-practice-section .swiper,
 .js-section .swiper{
     padding-bottom: 30px;
 }
@@ -422,6 +429,45 @@ section h5 a:hover{
 .fa-instagram{
     font-size: 18px;
 }
+
+/* js practice section */
+.js-practice-section{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    grid-template-columns: auto auto;
+}
+.js-practice-section h3{
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transform: 0.3s ease all;
+}
+.js-practice-section h5{
+    position: absolute;
+    right: 15px;
+    bottom: 45px;
+    z-index: 1;
+}
+.js-practice-section h5 i{
+    font-size: 20px;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.js-practice-section .js-soundboard.box,
+.js-practice-section .js-bgslider.box,
+.js-practice-section .js-expandcard.box,
+.js-practice-section .js-faqAcc.box{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.js-practice-section .swiper{
+    cursor: pointer;
+}
+
+
 /* section 4 */
 
 .section4{
