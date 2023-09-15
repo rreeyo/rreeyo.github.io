@@ -432,16 +432,15 @@ section h5 a:hover{
 
 /* js practice section */
 .js-practice-section{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
 }
 .js-practice-section h3{
     text-align: center;
     margin-bottom: 10px;
-    cursor: pointer;
-    transform: 0.3s ease all;
 }
 .js-practice-section h5{
     position: absolute;
@@ -449,11 +448,16 @@ section h5 a:hover{
     bottom: 45px;
     z-index: 1;
 }
+
 .js-practice-section h5 i{
     font-size: 20px;
     background-color: wheat;
     padding: 20px;
     border-radius: 50%;
+}
+.js-practice-section h5 i:hover{
+    background-color: black;
+    color: wheat;
 }
 
 .js-practice-section .js-soundboard.box,
@@ -701,5 +705,15 @@ section h5 a:hover{
     .section4 .icon-list-container .icon-list{
         padding: 10px 0px;
     }
+    /* js practice section */
+    .js-practice-section{
+        padding: 0 30px;
+    }
+    .js-practice-section .js-soundboard.box,
+    .js-practice-section .js-bgslider.box,
+    .js-practice-section .js-expandcard.box,
+    .js-practice-section .js-faqAcc.box{
+        width: 100%;
 
+    }
 }
