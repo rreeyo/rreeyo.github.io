@@ -638,7 +638,7 @@ section h5 a:hover{
         font-size: 16px;
     }
     .section1 .section1-left{
-        width: 80%;
+        width: 90%;
     }
     .section1 .section1-right img{
         width: 200px;
@@ -675,11 +675,17 @@ section h5 a:hover{
         padding-right: 5%;
         padding-top: 20px;
     }
-
+    .section2 .section2-right h2{
+        font-size: 20px;
+    }
     .swiper{
         width:  100%;
     } 
 
+    
+    .section3 .section3-row1 h2{
+        margin-bottom: 30px;
+    }
 
     .section3 .section3-row1,
     .section3 .section3-row5,
