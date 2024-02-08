@@ -42,7 +42,24 @@ header{
 }
 .navbar .logo a{
     color: black;
+    position: relative;
 }
+
+.navbar .logo a::before{
+    content: "REEYO";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: rgb(133, 35, 224);
+    /* border-right: 4px solid rgb(133, 35, 224); */
+    transition: 0.4s ease-in-out;
+}
+
+.navbar .logo a:hover::before{
+    width: 100%;
+}
+
 .navbar ul{
     display: flex;
 }
@@ -75,10 +92,10 @@ header{
 
 /* sections */
 
-section{
+/* section{
     max-width: 1240px;
     margin: auto;
-}
+} */
 
 .gdrive-portfolio{
     text-align: center;
@@ -103,11 +120,14 @@ section{
     justify-content: center;
     align-items: center;
     padding: 170px 0 100px;
+    max-width: 1240px;
+    margin: auto;
     /* background-color: #f5f5f5; */
 }
 .section1 .section1-left{
     width: 40%;
 }
+
 .section1 h1{
     font-size: 35px;
     font-weight: 900;
@@ -125,13 +145,27 @@ section{
 .section1 .section1-right img{
     height: 280px;
     width: 280px;
-    border-radius: 66% 34% 59% 41% / 30% 28% 72% 70%;
-    border: 5px solid black;
+    /* border-radius: 66% 34% 59% 41% / 30% 28% 72% 70%; */
+    /* border: 5px solid black; */
+    box-shadow: 0 5px 5px 5px rgba(133, 35, 224, 0.2);
+    animation: animate 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
 }
+
+@keyframes animate {
+    0%, 100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
 .top-line-break hr{
     border: 1px solid black;
-    width: 60%;
+    width: 39%;
     margin: 0px auto 20px;
+    
 }
 
 /* section 1 bottom */
@@ -176,6 +210,8 @@ section{
     justify-content: center;
     align-items: center;
     padding: 150px 0 100px;
+    max-width: 1240px;
+    margin: auto;
     /* background-color: #f5f5f5; */
 }
 .section2 .section2-left{
@@ -211,12 +247,12 @@ section{
 }
 
 /* special section */
-.special-section{
+/* .special-section{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 150px 0 100px;
-}
+} */
 /* section 3 */
 
 .section3{
@@ -228,7 +264,9 @@ section{
 .section3 .section3-row8,
 .section3 .section3-row10,
 .section3 .section3-row12{
-    margin: 0 100px;
+    /* margin: 0 100px; */
+    max-width: 1240px;
+    margin: 0 22.5%;
 }
 .section3 .section3-row1 h4{
     color: rgb(133, 35, 224);
@@ -302,11 +340,12 @@ section{
 .section3 .section3-row7,
 .section3 .section3-row11,
 .js-section .js-row2{
-    padding: 40px 0 50px;
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 70px 0;
+    max-width: 1240px;
+    margin: auto;
 }
 .section3 .section3-row2-left,
 .section3 .section3-row4-left,
@@ -335,11 +374,12 @@ section{
 .section3 .section3-row6,
 .section3 .section3-row9,
 .js-section .js-row1{
-    padding: 40px 0 50px;
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 70px 0;
+    max-width: 1240px;
+    margin: auto;
 }
 .section3 .section3-row3-left,
 .section3 .section3-row6-left,
@@ -394,6 +434,7 @@ section{
 
 .section3 .swiper,
 .js-practice-section .swiper,
+.work-projects .swiper,
 .js-section .swiper{
     padding-bottom: 30px;
 }
@@ -432,31 +473,33 @@ section h5 a:hover{
 }
 
 /* js practice section */
-.js-practice-section{
-    width: 100%;
+.js-practice-section, .work-projects{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    max-width: 1240px;
+    margin: auto;
     /* grid-template-columns: auto auto; */
 }
-.js-practice-section h3{
+.js-practice-section h3, .work-projects h3{
     text-align: center;
     margin-bottom: 10px;
 }
-.js-practice-section h5{
+.js-practice-section h5, .work-projects h5{
     position: absolute;
     right: 15px;
     bottom: 45px;
     z-index: 1;
 }
 
-.js-practice-section h5 i{
+.js-practice-section h5 i, .work-projects h5 i{
     font-size: 20px;
     background-color: wheat;
     padding: 20px;
     border-radius: 50%;
 }
-.js-practice-section h5 i:hover{
+.js-practice-section h5 i:hover, .work-projects h5 i:hover{
     background-color: black;
     color: wheat;
 }
@@ -464,11 +507,12 @@ section h5 a:hover{
 .js-practice-section .js-soundboard.box,
 .js-practice-section .js-bgslider.box,
 .js-practice-section .js-expandcard.box,
-.js-practice-section .js-faqAcc.box{
+.js-practice-section .js-faqAcc.box,
+.work-projects .colourtubes.box{
     width: 50%;
     margin-bottom: 20px;
 }
-.js-practice-section .swiper{
+.js-practice-section .swiper, .work-projects .swiper{
     cursor: pointer;
 }
 
@@ -477,6 +521,8 @@ section h5 a:hover{
 
 .section4{
     padding: 100px 0;
+    max-width: 1240px;
+    margin: auto;
     /* background-color: #f5f5f5; */
 }
 .section4 .section4-row1 h4{
@@ -519,13 +565,20 @@ section h5 a:hover{
 .footer{
     text-align: center;
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 40px;
 }
 
 .footer p{
     font-weight: 400;
 }
 @media screen and (max-width: 1023px){
+    .section1 h1{
+        font-size: 24px;
+    }
+    .top-line-break hr{
+        width: 70%;
+        
+    }
     .section2{
         flex-direction: column;
         text-align: center;
@@ -543,6 +596,9 @@ section h5 a:hover{
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 20px;
+    }
+    .section3 .section3-row1{
+        margin: 0 5%;
     }
 }
 @media screen and (max-width: 767px){
@@ -707,13 +763,15 @@ section h5 a:hover{
         padding: 10px 0px;
     }
     /* js practice section */
-    .js-practice-section{
+    .js-practice-section, .work-projects{
         padding: 0 30px;
     }
     .js-practice-section .js-soundboard.box,
     .js-practice-section .js-bgslider.box,
     .js-practice-section .js-expandcard.box,
-    .js-practice-section .js-faqAcc.box{
+    .js-practice-section .js-faqAcc.box,
+    .js-practice-section .colourtubes.box,
+    .work-projects .colourtubes.box{
         width: 100%;
 
     }
