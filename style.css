@@ -649,6 +649,9 @@ section h5 a:hover{
         width: 200px;
         height: 200px;
     }
+    .section1-bottom{
+        padding-bottom: 0px;
+    }
     .section1-bottom p{
         display: none;
     }
