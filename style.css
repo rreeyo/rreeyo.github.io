@@ -148,7 +148,7 @@ header{
     /* border-radius: 66% 34% 59% 41% / 30% 28% 72% 70%; */
     /* border: 5px solid black; */
     box-shadow: 0 5px 5px 5px rgba(133, 35, 224, 0.2);
-    animation: animate 6s ease-in-out infinite;
+    animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
 
@@ -773,4 +773,15 @@ section h5 a:hover{
         width: 100%;
 
     }
+}
+
+/* emojis */
+
+.emoji{
+    font-size: 26px;
+}
+
+.sub-emoji-ojt,
+.sub-emoji-despro{
+    padding-left: 10px;
 }
