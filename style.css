@@ -624,18 +624,18 @@ section h5 a:hover{
         display: block;
         margin: 50px 50px;
     }
+    .section1{
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 170px 5% 100px;
+    }
     .section1 .section1-left h1{
         font-size: 22px;
     }
     .section1 .section1-left p{
         width: 100%;
         font-size: 16px;
-    }
-    .section1{
-        justify-content: space-evenly;
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 170px 5% 100px;
     }
     .section1 .section1-left{
         width: 80%;
