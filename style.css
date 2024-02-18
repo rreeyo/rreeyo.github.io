@@ -675,3 +675,7 @@ section h5 a:hover{
     
     
 }
+
+.swiper-wrapper img{
+    border-radius: 25px;
+}
