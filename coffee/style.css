@@ -752,6 +752,9 @@ footer hr{
     section .about-us .about-service .left-column .container h4{
         font-size: 40px!important;
     }
+    section .about-us .about-service .left-column .container h5{
+        font-size: 14px;
+    }
     section .about-us .about-service .right-column h3{
         font-size: 46px;
     }
@@ -843,6 +846,12 @@ footer hr{
         flex-direction: column;
         text-align: center;
     }
+    section .about-us .about-service .left-column .container h4{
+        font-size: 36px!important;
+        line-height: 1.4em;
+        font-weight: 700;
+        text-align: center;
+    }
     section .about-us .about-service .left-column{
         width: 100%!important;
     }
@@ -863,4 +872,5 @@ footer hr{
     footer .container .inner-container{
         width: 300px!important;
     }
+
 }
