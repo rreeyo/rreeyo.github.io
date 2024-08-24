@@ -264,7 +264,7 @@ header{
 }
 
 
-.projects .projects-row2,
+.projects .projects-1,
 .projects .projects-row4,
 .projects .projects-row6,
 .projects .projects-row8{
@@ -275,27 +275,27 @@ header{
     max-width: 1240px;
     margin: auto;
 }
-.projects .projects-row2-left,
+.projects .projects-1-left,
 .projects .projects-row4-left,
 .projects .projects-row6-left,
 .projects .projects-row8-left{
     width: 50%;
     height: 100%;
 }
-.projects .projects-row2-left .mySwiper,
+.projects .projects-1-left .mySwiper,
 .projects .projects-row4-left .mySwiper,
 .projects .projects-row6-left .mySwiper,
 .projects .projects-row8-left .mySwiper{
     margin: auto;
 }
-.projects .projects-row2-right,
+.projects .projects-1-right,
 .projects .projects-row4-right,
 .projects .projects-row6-right,
 .projects .projects-row8-right{
     width: 30%;
 }
 
-.projects .projects-row3,
+.projects .projects-2,
 .projects .projects-row5,
 .projects .projects-row7{
     padding: 40px 0;
@@ -305,26 +305,26 @@ header{
     max-width: 1240px;
     margin: auto;
 }
-.projects .projects-row3-left,
+.projects .projects-2-left,
 .projects .projects-row5-left,
 .projects .projects-row7-left{
     width: 30%;
     height: 100%;
 }
-.projects .projects-row3-left .mySwiper,
+.projects .projects-2-left .mySwiper,
 .projects .projects-row5-left .mySwiper,
 .projects .projects-row7-left .mySwiper{
     margin: auto;
 }
-.projects .projects-row3-right,
+.projects .projects-2-right,
 .projects .projects-row5-right,
 .projects .projects-row7-right{
     width: 50%;
 }
 
 
-.projects-row2-right p,
-.projects-row3-left p,
+.projects-1-right p,
+.projects-2-left p,
 .projects-row4-right p,
 .projects-row5-left p,
 .projects-row6-right p,
@@ -611,7 +611,7 @@ section h5 a:hover{
         margin: 0 5%;
     }
 
-    .projects .projects-row2,
+    .projects .projects-1,
     .projects .projects-row4,
     .projects .projects-row6,
     .projects .projects-row8{
@@ -624,7 +624,7 @@ section h5 a:hover{
         padding-right: 5%;
     }
    
-    .projects .projects-row2-left,
+    .projects .projects-1-left,
     .projects-row4-left,
     .projects-row6-left,
     .projects-row8-left{
@@ -632,7 +632,7 @@ section h5 a:hover{
         justify-content: center;
         width: 100%!important;
     }
-    .projects .projects-row2-right,
+    .projects .projects-1-right,
     .projects .projects-row4-right,
     .projects .projects-row6-right,
     .projects .projects-row8-right{
@@ -640,7 +640,7 @@ section h5 a:hover{
         padding-top: 20px;
     }
 
-    .projects .projects-row3,
+    .projects .projects-2,
     .projects .projects-row5,
     .projects .projects-row7{
         display: flex;
@@ -651,14 +651,14 @@ section h5 a:hover{
         padding-left: 5%;
         padding-right: 5%;
     }
-    .projects .projects-row3-right,
+    .projects .projects-2-right,
     .projects .projects-row5-right,
     .projects .projects-row7-right{
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .projects .projects-row3-left,
+    .projects .projects-2-left,
     .projects .projects-row5-left,
     .projects .projects-row7-left{
         width: 100%;
